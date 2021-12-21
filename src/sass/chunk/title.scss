@@ -1,0 +1,6 @@
+.title {
+    text-transform: uppercase;
+    @include mw700 {
+        text-align: center;
+    }
+}

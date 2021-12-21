@@ -1,0 +1,29 @@
+$base-font-size: 22px;
+@mixin mw700{
+    @media (max-width: 700px){
+        @content;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: $base-font-size;
+    font-family: 'Arial';
+    line-height: 1.5;
+    background: url("../img/1.png") no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mw700 {
+        color: #fff;
+        background-color: #000;
+        border: 1px solid #ddd;
+    }
+}
+
+
+@import "chunk/*.scss";
+// @import "chunk/title.scss";
+// @import "chunk/news.scss";

@@ -1,0 +1,13 @@
+extends layout/app
+
+block page
+    include chunk/header
+
+    h1.title Main Pug Page
+    img(src="img/1.png", alt="Minified image" width="500")
+
+    ul.news
+        each item in news 
+          li= item.title
+
+    include chunk/footer
